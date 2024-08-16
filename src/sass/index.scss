@@ -1,2 +1,9 @@
-@import './common';
-@import './example';
+// Common styles
+@import './base/reset';
+@import './base/common';
+@import './base/example';
+
+// Components styles
+@import './components/header';
+@import './components/section-products';
+@import './components/modal';

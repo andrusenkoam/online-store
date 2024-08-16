@@ -1,0 +1,35 @@
+.section-products {
+  background-color: #d3cece;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.products-list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 20px) / 2);
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.products-list .info {
+  margin-top: 10px;
+  transition: color 500ms ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
+
+.button-wrap {
+  margin-top: 20px;
+}

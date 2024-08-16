@@ -1,0 +1,39 @@
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: yellowgreen;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.logo {
+  margin-right: 100px;
+  color: blue;
+  transition: color 500ms ease;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-list .link {
+  color: yellow;
+  transition: color 500ms ease;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+}

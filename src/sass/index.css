@@ -1,0 +1,176 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.button {
+  min-width: 200px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: yellow;
+  transition: border-color 500ms ease;
+  cursor: pointer;
+}
+.button:not(:first-child) {
+  margin-left: 20px;
+}
+.button:hover, .button:focus {
+  border-color: red;
+}
+
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+}
+
+.example {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #2f2f37;
+  max-width: 960px;
+  padding: 16px;
+}
+
+.example code {
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #ff6b0a;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+
+.example .background {
+  height: 240px;
+  background-image: url("../images/logo.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: yellowgreen;
+}
+
+.header-nav {
+  display: flex;
+}
+
+.logo {
+  margin-right: 100px;
+  color: blue;
+  transition: color 500ms ease;
+}
+.logo:hover, .logo:focus {
+  color: red;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list .item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-list .link {
+  color: yellow;
+  transition: color 500ms ease;
+}
+.nav-list .link:hover, .nav-list .link:focus {
+  color: red;
+}
+
+.section-products {
+  background-color: #d3cece;
+}
+
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.products-list .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: calc((100% - 20px) / 2);
+  padding: 20px;
+  border: 1px solid green;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.products-list .info {
+  margin-top: 10px;
+  transition: color 500ms ease;
+  cursor: pointer;
+}
+.products-list .info:hover, .products-list .info:focus {
+  color: red;
+}
+
+.button-wrap {
+  margin-top: 20px;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: justify;
+}
+
+.modal .title {
+  margin-top: 10px;
+}
+
+.modal .price {
+  margin-top: 20px;
+}
+
+.modal .description {
+  margin-top: 20px;
+}
+
+.modal .button-wrap {
+  margin-top: 20px;
+}/*# sourceMappingURL=index.css.map */
