@@ -1,3 +1,17 @@
 .favorute-list {
   @extend .products-list;
 }
+
+.empty-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-img {
+  width: 80%;
+}
+
+.favorute-list .js-favorite {
+  display: none;
+}

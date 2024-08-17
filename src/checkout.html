@@ -6,5 +6,27 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="./sass/index.scss" />
   </head>
-  <body></body>
+  <body>
+    <header class="page-header">
+      <nav class="header-nav">
+        <a href="./index.html" class="logo">Online STORE</a>
+        <ul class="nav-list">
+          <li class="item"><a class="link" href="./index.html">HOME</a></li>
+          <li class="item">
+            <a class="link" href="./favorite.html">Favorite</a>
+          </li>
+          <li class="item">
+            <a class="link" href="#">Checkout</a>
+          </li>
+        </ul>
+      </nav>
+      <input type="text" class="js-search search" />
+    </header>
+    <section class="section-checkout section">
+      <div class="container">
+        <ul class="checkout-list js-list"></ul>
+      </div>
+    </section>
+    <script type="module" src="./checkout.js"></script>
+  </body>
 </html>

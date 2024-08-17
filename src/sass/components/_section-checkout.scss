@@ -1,0 +1,7 @@
+.checkout-list {
+  @extend .products-list;
+}
+
+.checkout-list .js-cart {
+  display: none;
+}
