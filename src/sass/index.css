@@ -20,6 +20,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #d3cece;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -113,10 +117,6 @@ img {
 }
 .nav-list .link:hover, .nav-list .link:focus {
   color: red;
-}
-
-.section-products {
-  background-color: #d3cece;
 }
 
 .products-list {

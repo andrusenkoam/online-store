@@ -1,6 +1,9 @@
 import * as basicLightbox from 'basiclightbox';
 import 'basiclightbox/dist/basicLightbox.min.css';
 
+import { common } from './common';
+import { createMarkup } from './helpers/createMarkup';
+
 const instruments = [
   {
     id: 1,
@@ -68,36 +71,14 @@ const instruments = [
   },
 ];
 
-const refs = {
-  search: document.querySelector('.js-search'),
-  list: document.querySelector('.js-list'),
-};
-const KEY_FAVORITE = 'favorite';
-const KEY_CART = 'cart';
-const favoriteArr = JSON.parse(localStorage.getItem(KEY_FAVORITE)) ?? [];
-const cartArr = JSON.parse(localStorage.getItem(KEY_CART)) ?? [];
+const searchEl = document.querySelector('.js-search');
+const listEl = document.querySelector('.js-list');
+const favoriteArr = JSON.parse(localStorage.getItem(common.KEY_FAVORITE)) ?? [];
+const cartArr = JSON.parse(localStorage.getItem(common.KEY_CART)) ?? [];
 
-function createMarkup(arr) {
-  const markup = arr
-    .map(
-      ({ id, img, name }) => ` <li class="item js-card" data-id="${id}">
-      <img src="${img}" alt="${name}" width="300" />
-      <h2 class="title">${name}</h2>
-      <p class="info js-info">More information...</p>
-      <div class="button-wrap">
-        <button type="button" class="button js-favorite">Add to favorite</button>
-        <button type="button" class="button js-cart">Add to products cart</button>
-      </div>
-    </li>`
-    )
-    .join('');
+createMarkup(instruments, listEl);
 
-  refs.list.innerHTML = markup;
-}
-
-createMarkup(instruments);
-
-refs.list.addEventListener('click', onClick);
+listEl.addEventListener('click', onClick);
 
 function onClick(evt) {
   if (evt.target.classList.contains('js-info')) {
@@ -129,7 +110,7 @@ function onClick(evt) {
     }
 
     favoriteArr.push(product);
-    localStorage.setItem(KEY_FAVORITE, JSON.stringify(favoriteArr));
+    localStorage.setItem(common.KEY_FAVORITE, JSON.stringify(favoriteArr));
   }
 
   if (evt.target.classList.contains('js-cart')) {
@@ -142,7 +123,7 @@ function onClick(evt) {
     }
 
     cartArr.push(product);
-    localStorage.setItem(KEY_CART, JSON.stringify(cartArr));
+    localStorage.setItem(common.KEY_CART, JSON.stringify(cartArr));
   }
 }
 
