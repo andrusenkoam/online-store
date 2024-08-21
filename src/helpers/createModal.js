@@ -4,7 +4,7 @@ import 'basiclightbox/dist/basicLightbox.min.css';
 function createModal(product) {
   const instance = basicLightbox.create(
     `
-	    <div class="modal">
+	  <div class="modal">
       <img src="${product.img}" alt="${product.name}" width="300" />
       <h2 class="title">${product.name}</h2>
       <h3 class="price">${product.price} грн.</h3>
